@@ -29,8 +29,8 @@
         <nav class="page-navigation">
           <!-- logo -->
           <a class="logotype link" href="./index.html"
-            >Web<span class="logotype-span">Studio</span></a
-          >
+            >Web<span class="logotype-span">Studio</span>
+          </a>
           <ul class="menu">
             <li class="menu-item list">
               <a class="menu-link link" href="./index.html">Studio</a>
@@ -42,6 +42,11 @@
               <a class="menu-link link" href="./index.html">Contacts</a>
             </li>
           </ul>
+          <button class="burger-menu-btn" type="button" aria-label="mobile menu button">
+            <svg class="burger-menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-burger-menu"></use>
+            </svg>
+          </button>
         </nav>
         <!-- contacts -->
         <address class="page-address">
@@ -409,72 +414,76 @@
     <!-- Footer section -->
     <footer class="page-footer">
       <div class="container">
-        <div class="footer-logo-box">
-          <!-- Logotype -->
-          <a class="logotype link" href="./index.html"
-            >Web<span class="logotype-span">Studio</span></a
-          >
-          <p class="page-footer-text">
-            Increase the flow of customers and sales for your business with digital marketing &
-            growth solutions.
-          </p>
-        </div>
-        <div class="footer-social-box">
-          <p class="footer-social-text">Social media</p>
-          <ul class="footer-social-list">
-            <li class="footer-social-list-item">
-              <a class="footer-social-list-link" href="#">
+        <div class="footer-box">
+          <div class="footer-logo-box">
+            <!-- Logotype -->
+            <a class="logotype link" href="./index.html"
+              >Web<span class="logotype-span">Studio</span></a
+            >
+            <p class="page-footer-text">
+              Increase the flow of customers and sales for your business with digital marketing &
+              growth solutions.
+            </p>
+          </div>
+          <div class="footer-social-box">
+            <p class="footer-social-text">Social media</p>
+            <ul class="footer-social-list">
+              <li class="footer-social-list-item">
+                <a class="footer-social-list-link" href="#">
+                  <svg class="footer-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram-2"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list-item">
+                <a class="footer-social-list-link" href="#">
+                  <svg class="footer-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list-item">
+                <a class="footer-social-list-link" href="#">
+                  <svg class="footer-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook-1"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="footer-social-list-item">
+                <a class="footer-social-list-link" href="#">
+                  <svg class="footer-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin-1"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-subscribe-box">
+            <p class="footer-subscribe-text">Subscribe</p>
+            <form class="subscribe-form" name="subscribe_form">
+              <label class="subscribe-form-label">
+                <input
+                  class="subscribe-form-input"
+                  type="email"
+                  name="subscribe"
+                  placeholder="E-mail"
+                />
+              </label>
+              <button class="subscribe-btn" type="submit" aria-label="subscribe button">
+                Subscribe
                 <svg class="footer-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                  <use href="./images/icons.svg#icon-send"></use>
                 </svg>
-              </a>
-            </li>
-            <li class="footer-social-list-item">
-              <a class="footer-social-list-link" href="#">
-                <svg class="footer-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list-item">
-              <a class="footer-social-list-link" href="#">
-                <svg class="footer-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook-1"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="footer-social-list-item">
-              <a class="footer-social-list-link" href="#">
-                <svg class="footer-icon" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin-1"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-        <div class="footer-subscribe-box">
-          <p class="footer-subscribe-text">Subscribe</p>
-          <form class="subscribe-form" name="subscribe_form">
-            <label class="subscribe-form-label">
-              <input
-                class="subscribe-form-input"
-                type="email"
-                name="subscribe"
-                placeholder="E-mail"
-              />
-            </label>
-            <button class="subscribe-btn" type="submit" aria-label="subscribe button">
-              Subscribe
-              <svg class="footer-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
-          </form>
+              </button>
+            </form>
+          </div>
         </div>
       </div>
     </footer>
+
     <!-- FORM -->
-    <div class="modal-backdrop is-open">
+    <!-- is-open -->
+    <div class="modal-backdrop">
       <div class="modal-window">
         <button class="close-btn" type="button" aria-label="close modal button">
           <svg class="close-icon" width="8" height="8">
@@ -555,7 +564,7 @@
                   <use href="./images/icons.svg#icon-check-1"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
+              <p class="privacy-text">I accept the terms and conditions of the</p>
               <a class="privacy-link" href="#">Privacy Policy</a>
             </label>
           </div>
@@ -564,5 +573,75 @@
       </div>
     </div>
     <!-- /FORM -->
+
+    <!-- BURGER-menu -->
+    <!-- is-open -->
+    <div class="mobile-menu-wrapper">
+      <div class="burger-box">
+        <button class="close-btn" type="button" aria-label="close menu button">
+          <svg class="close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-close-black-1"></use>
+          </svg>
+        </button>
+        <nav class="mobile-menu-navigation">
+          <ul class="mobile-menu">
+            <li class="mobile-menu-item list">
+              <a class="mobile-menu-link link" href="./index.html">Studio</a>
+            </li>
+            <li class="mobile-menu-item list">
+              <a class="mobile-menu-link link" href="./index.html">Portfolio</a>
+            </li>
+            <li class="mobile-menu-item list">
+              <a class="mobile-menu-link link" href="./index.html">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+        <address class="burger-address">
+          <ul class="burger-contacts">
+            <li class="burger-contacts-item list">
+              <a class="burger-contacts-link link" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="burger-contacts-item list">
+              <a class="burger-contacts-link link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+            </li>
+          </ul>
+        </address>
+        <div class="burger-social-box">
+          <ul class="burger-social-list">
+            <li class="burger-social-list-item">
+              <a class="burger-social-list-link" href="#">
+                <svg class="burger-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-social-list-item">
+              <a class="burger-social-list-link" href="#">
+                <svg class="burger-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-social-list-item">
+              <a class="burger-social-list-link" href="#">
+                <svg class="burger-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="burger-social-list-item">
+              <a class="burger-social-list-link" href="#">
+                <svg class="burger-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- /BURGER-menu -->
   </body>
 </html>
