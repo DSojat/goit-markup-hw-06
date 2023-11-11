@@ -128,12 +128,19 @@ button {
   background-color: rgba(46, 47, 66, 0.7);
   padding: 72px 0;
   background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-    url(../images/hero-people-office.jpg);
+    url(../images/dark-bg-mob.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin-left: auto;
   margin-right: auto;
+}
+
+@media (min-resolution: 192dpi) and (max-width: 767px) {
+  .page-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/dark-bg-mob@2x.jpg);
+  }
 }
 
 .hero-top {
@@ -761,17 +768,24 @@ button {
 .burger-social-list-link:focus {
   background-color: #404bbf;
 }
-
-@media screen and (orientation: landscape) {
-  .mobile-menu-wrapper.is-open {
-    transform: translateX(100%);
-  }
-}
 /* ========= /BURGER-mobile style === */
 
 /* ========= /MOBILE styles ========= */
 
 /* ========= TABLET styles ========= */
+@media (min-width: 768px) {
+  .page-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/dark-bg-tab.jpg);
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 768px) {
+  .page-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/dark-bg-tab@2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
@@ -868,8 +882,6 @@ button {
   /* ========= HERO-tablet ========= */
   .page-hero {
     padding: 112px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/hero-people-office.jpg);
   }
 
   .hero-top {
@@ -982,6 +994,20 @@ button {
 /* ========= /TABLET styles ========= */
 
 /* ========= DESKTOP styles ========= */
+@media (min-width: 1158px) {
+  .page-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/dark-bg-desk.jpg);
+  }
+}
+
+@media (min-resolution: 192dpi) and (min-width: 1158px) {
+  .page-hero {
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
+      url(../images/dark-bg-desk@2x.jpg);
+  }
+}
+
 @media screen and (min-width: 1158px) {
   .container {
     max-width: 1158px;
@@ -1009,8 +1035,6 @@ button {
   /* ========= HERO-desktop ========= */
   .page-hero {
     padding: 188px 0;
-    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
-      url(../images/hero-people-office.jpg);
     max-width: 1440px;
   }
 
