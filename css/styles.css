@@ -951,13 +951,19 @@ button {
     display: flex;
     align-items: baseline;
     flex-wrap: wrap;
-    gap: 24px;
+    column-gap: 24px;
+    row-gap: 72px;
     width: 496px;
     margin: 0 auto;
   }
 
   .footer-logo-box {
     align-items: flex-start;
+    margin-bottom: 0;
+  }
+
+  .footer-social-box {
+    margin-bottom: 0;
   }
 
   .footer-social-text,
