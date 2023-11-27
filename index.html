@@ -42,7 +42,12 @@
               <a class="menu-link link" href="./index.html">Contacts</a>
             </li>
           </ul>
-          <button class="burger-menu-btn" type="button" aria-label="mobile menu button">
+          <button
+            class="burger-menu-btn"
+            type="button"
+            aria-label="mobile menu button"
+            onclick="openNav()"
+          >
             <svg class="burger-menu-icon" width="24" height="24">
               <use href="./images/icons.svg#icon-burger-menu"></use>
             </svg>
@@ -68,7 +73,12 @@
       <section class="page-hero">
         <div class="container">
           <h1 class="hero-top">Effective Solutions for Your Business</h1>
-          <button class="hero-button" type="button" aria-label="order service button">
+          <button
+            class="hero-button"
+            type="button"
+            aria-label="order service button"
+            onclick="openForm()"
+          >
             Order Service
           </button>
         </div>
@@ -571,9 +581,14 @@
 
     <!-- FORM -->
     <!-- is-open -->
-    <div class="modal-backdrop">
+    <div class="modal-backdrop" id="backdrop">
       <div class="modal-window">
-        <button class="close-btn" type="button" aria-label="close modal button">
+        <button
+          class="close-btn"
+          type="button"
+          aria-label="close modal button"
+          onclick="closeForm()"
+        >
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-1"></use>
           </svg>
@@ -660,16 +675,31 @@
         </form>
       </div>
     </div>
+    <!-- script open-close -->
+    <script>
+      function openForm() {
+        document.getElementById('backdrop').style.opacity = '1';
+        document.getElementById('backdrop').style.visibility = 'visible';
+        document.getElementById('backdrop').style.pointerEvents = 'auto';
+      }
+
+      function closeForm() {
+        document.getElementById('backdrop').style.opacity = '0';
+        document.getElementById('backdrop').style.visibility = 'hidden';
+        document.getElementById('backdrop').style.pointerEvents = 'none';
+      }
+    </script>
     <!-- /FORM -->
 
     <!-- BURGER-menu -->
     <!-- is-open -->
-    <div class="mobile-menu-wrapper">
+    <div class="mobile-menu-wrapper" id="curtain">
       <div class="burger-box">
         <button
           class="mobile-menu-close-btn close-btn"
           type="button"
           aria-label="close menu button"
+          onclick="closeNav()"
         >
           <svg class="close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-close-black-1"></use>
@@ -732,6 +762,16 @@
         </div>
       </div>
     </div>
+    <!-- script open-close -->
+    <script>
+      function openNav() {
+        document.getElementById('curtain').style.transform = 'translateX(0%)';
+      }
+
+      function closeNav() {
+        document.getElementById('curtain').style.transform = 'translateX(100%)';
+      }
+    </script>
     <!-- /BURGER-menu -->
   </body>
 </html>
